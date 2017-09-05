@@ -41,10 +41,10 @@ unaccented 'áÉíÓú' # => 'aEiOu'
 
 ```ruby
 module MyModule
-    extend StringExt
-    downcase 'ÁÉÍÓÚÑ' # => 'áéíóúñ'
-    upcase 'áéíóúñ' # => 'ÁÉÍÓÚÑ'
-    unaccented 'áÉíÓú' # => 'aEiOu'
+  extend StringExt
+  downcase 'ÁÉÍÓÚÑ' # => 'áéíóúñ'
+  upcase 'áéíóúñ' # => 'ÁÉÍÓÚÑ'
+  unaccented 'áÉíÓú' # => 'aEiOu'
 end
 ```
 
