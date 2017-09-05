@@ -1,0 +1,5 @@
+require 'coverage_helper'
+require 'string_ext'
+require 'minitest/autorun'
+require 'minitest/colorin'
+require 'pry-nav'
