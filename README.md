@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/gabynaiman/string_ext.svg?branch=master)](https://travis-ci.org/gabynaiman/string_ext)
 [![Coverage Status](https://coveralls.io/repos/github/gabynaiman/string_ext/badge.svg?branch=master)](https://coveralls.io/github/gabynaiman/string_ext?branch=master)
 [![Code Climate](https://codeclimate.com/github/gabynaiman/string_ext.svg)](https://codeclimate.com/github/gabynaiman/string_ext)
-[![Dependency Status](https://gemnasium.com/gabynaiman/string_ext.svg)](https://gemnasium.com/gabynaiman/string_ext)
 
 String utils for accented and special chars
 
