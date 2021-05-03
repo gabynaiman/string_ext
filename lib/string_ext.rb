@@ -31,6 +31,11 @@ module StringExt
     upcase: 'ÑÇ' + ACCENTS.values.map { |a| a[:upcase] }.join
   }
 
+  UNACCENT_REPLACEMENTS = ACCENTS.each_with_object({accented: '', unaccented: ''}) do |(char, cases), replacements|
+    replacements[:accented] += cases[:upcase] + cases[:downcase]
+    replacements[:unaccented] += (char * cases[:upcase].size) + (char.downcase * cases[:downcase].size)
+  end
+
   extend self
 
   def upcase(string)
@@ -42,9 +47,7 @@ module StringExt
   end
 
   def unaccented(string)
-    ACCENTS.inject(string) do |s, (char, cases)|
-      s.tr(cases[:upcase], char).tr(cases[:downcase], char.downcase)
-    end
+    string.tr(UNACCENT_REPLACEMENTS[:accented], UNACCENT_REPLACEMENTS[:unaccented])
   end
 
 end
